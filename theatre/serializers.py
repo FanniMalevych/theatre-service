@@ -5,11 +5,11 @@ from rest_framework.exceptions import ValidationError
 from theatre.models import (
     Genre,
     Actor,
-    CinemaHall,
-    Movie,
-    MovieSession,
     Ticket,
-    Order, TheatreHall, Play, Performance, Reservation,
+    TheatreHall,
+    Play,
+    Performance,
+    Reservation,
 )
 
 
