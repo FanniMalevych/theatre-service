@@ -250,7 +250,7 @@
     "fields": {
       "show_time": "2024-10-11T13:00:00Z",
       "play": 4,
-      "theatre_hall": 4
+      "theatre_hall": 2
     }
   },
   {
@@ -286,7 +286,7 @@
     "fields": {
       "show_time": "2024-10-15T13:00:00Z",
       "play": 2,
-      "theatre_hall": 4
+      "theatre_hall": 1
     }
   },
   {
