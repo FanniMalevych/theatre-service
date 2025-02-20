@@ -67,9 +67,7 @@ class AuthenticatedPlayApiTests(TestCase):
 
         play3 = sample_play(title="Play without genres")
 
-        res = self.client.get(
-            PLAY_URL, {"genres": f"{genre1.id},{genre2.id}"}
-        )
+        res = self.client.get(PLAY_URL, {"genres": f"{genre1.id},{genre2.id}"})
 
         serializer1 = PlayListSerializer(play1)
         serializer2 = PlayListSerializer(play2)
@@ -91,9 +89,7 @@ class AuthenticatedPlayApiTests(TestCase):
 
         play3 = sample_play(title="Play without actors")
 
-        res = self.client.get(
-            PLAY_URL, {"actors": f"{actor1.id},{actor2.id}"}
-        )
+        res = self.client.get(PLAY_URL, {"actors": f"{actor1.id},{actor2.id}"})
 
         serializer1 = PlayListSerializer(play1)
         serializer2 = PlayListSerializer(play2)
@@ -121,9 +117,7 @@ class AuthenticatedPlayApiTests(TestCase):
     def test_retrieve_play_detail(self):
         play = sample_play()
         play.genres.add(Genre.objects.create(name="Genre"))
-        play.actors.add(
-            Actor.objects.create(first_name="Actor", last_name="Last")
-        )
+        play.actors.add(Actor.objects.create(first_name="Actor", last_name="Last"))
 
         url = detail_url(play.id)
         res = self.client.get(url)
