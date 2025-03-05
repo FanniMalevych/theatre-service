@@ -1,0 +1,518 @@
+[
+  {
+    "model": "theatre.theatrehall",
+    "pk": 1,
+    "fields": {
+      "name": "The Royal Opera House",
+      "rows": 30,
+      "seats_in_row": 20
+    }
+  },
+  {
+    "model": "theatre.theatrehall",
+    "pk": 2,
+    "fields": {
+      "name": "The Globe Theatre",
+      "rows": 10,
+      "seats_in_row": 10
+    }
+  },
+  {
+    "model": "theatre.theatrehall",
+    "pk": 3,
+    "fields": {
+      "name": "The Sydney Opera House",
+      "rows": 30,
+      "seats_in_row": 30
+    }
+  },
+  {
+    "model": "theatre.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Drama"
+    }
+  },
+  {
+    "model": "theatre.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Comedy"
+    }
+  },
+  {
+    "model": "theatre.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Musical Theatre"
+    }
+  },
+  {
+    "model": "theatre.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Tragedy"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 1,
+    "fields": {
+      "first_name": "Denzel",
+      "last_name": "Washington"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 2,
+    "fields": {
+      "first_name": "Philip",
+      "last_name": "Seymour"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 3,
+    "fields": {
+      "first_name": "Brian",
+      "last_name": "Dennehy"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 4,
+    "fields": {
+      "first_name": "Nathan",
+      "last_name": "Lane"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 5,
+    "fields": {
+      "first_name": "Matthew",
+      "last_name": "Broderick"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 6,
+    "fields": {
+      "first_name": "Roger",
+      "last_name": "Bart"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 7,
+    "fields": {
+      "first_name": "Lin-Manuel",
+      "last_name": "Miranda"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 8,
+    "fields": {
+      "first_name": "Leslie",
+      "last_name": "Odom Jr."
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 9,
+    "fields": {
+      "first_name": "Phillipa",
+      "last_name": "Soo"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 10,
+    "fields": {
+      "first_name": "Laurence",
+      "last_name": "Olivier"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 11,
+    "fields": {
+      "first_name": "Kenneth",
+      "last_name": "Branagh"
+    }
+  },
+  {
+    "model": "theatre.actor",
+    "pk": 12,
+    "fields": {
+      "first_name": "David",
+      "last_name": "Tennant"
+    }
+  },
+  {
+    "model": "theatre.play",
+    "pk": 1,
+    "fields": {
+      "title": "Death of a Salesman",
+      "description": "A poignant drama about Willy Loman, an aging salesman struggling to cope with the realities of his life and the American Dream.",
+      "genres": [
+        1,
+        4
+      ],
+      "actors": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "theatre.play",
+    "pk": 2,
+    "fields": {
+      "title": "The Producers",
+      "description": "A comedic musical about two producers who scheme to get rich by overselling interests in a Broadway flop.",
+      "genres": [
+        2,
+        3
+      ],
+      "actors": [
+        6,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "theatre.play",
+    "pk": 3,
+    "fields": {
+      "title": "Hamilton",
+      "description": "A groundbreaking musical that tells the story of American Founding Father Alexander Hamilton through a diverse cast and hip-hop music.",
+      "genres": [
+        3
+      ],
+      "actors": [
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "theatre.play",
+    "pk": 4,
+    "fields": {
+      "title": "Hamlet",
+      "description": "A tragedy that follows Prince Hamlet as he seeks revenge against his uncle, who has murdered Hamlet's father.",
+      "genres": [
+        1,
+        4
+      ],
+      "actors": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 1,
+    "fields": {
+      "show_time": "2024-10-08T13:00:00Z",
+      "play": 1,
+      "theatre_hall": 1
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 2,
+    "fields": {
+      "show_time": "2024-10-09T13:00:00Z",
+      "play": 2,
+      "theatre_hall": 2
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 3,
+    "fields": {
+      "show_time": "2024-10-10T13:00:00Z",
+      "play": 3,
+      "theatre_hall": 3
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 4,
+    "fields": {
+      "show_time": "2024-10-11T13:00:00Z",
+      "play": 4,
+      "theatre_hall": 2
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 5,
+    "fields": {
+      "show_time": "2024-10-12T13:00:00Z",
+      "play": 4,
+      "theatre_hall": 1
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 6,
+    "fields": {
+      "show_time": "2024-10-13T13:00:00Z",
+      "play": 3,
+      "theatre_hall": 2
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 7,
+    "fields": {
+      "show_time": "2024-10-14T13:00:00Z",
+      "play": 1,
+      "theatre_hall": 3
+    }
+  },
+  {
+    "model": "theatre.performance",
+    "pk": 8,
+    "fields": {
+      "show_time": "2024-10-15T13:00:00Z",
+      "play": 2,
+      "theatre_hall": 1
+    }
+  },
+  {
+    "model": "theatre.reservation",
+    "pk": 1,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "theatre.reservation",
+    "pk": 2,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 2
+    }
+  },
+  {
+    "model": "theatre.reservation",
+    "pk": 3,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "theatre.reservation",
+    "pk": 4,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 1,
+    "fields": {
+      "performance": 1,
+      "reservation": 1,
+      "row": 1,
+      "seat": 1
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 2,
+    "fields": {
+      "performance": 1,
+      "reservation": 1,
+      "row": 2,
+      "seat": 4
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 3,
+    "fields": {
+      "performance": 2,
+      "reservation": 1,
+      "row": 3,
+      "seat": 3
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 4,
+    "fields": {
+      "performance": 2,
+      "reservation": 1,
+      "row": 4,
+      "seat": 3
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 5,
+    "fields": {
+      "performance": 3,
+      "reservation": 1,
+      "row": 5,
+      "seat": 1
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 6,
+    "fields": {
+      "performance": 4,
+      "reservation": 1,
+      "row": 6,
+      "seat": 2
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 7,
+    "fields": {
+      "performance": 5,
+      "reservation": 1,
+      "row": 7,
+      "seat": 3
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 8,
+    "fields": {
+      "performance": 5,
+      "reservation": 2,
+      "row": 8,
+      "seat": 4
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 9,
+    "fields": {
+      "performance": 5,
+      "reservation": 2,
+      "row": 1,
+      "seat": 5
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 10,
+    "fields": {
+      "performance": 6,
+      "reservation": 2,
+      "row": 1,
+      "seat": 6
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 11,
+    "fields": {
+      "performance": 7,
+      "reservation": 3,
+      "row": 4,
+      "seat": 7
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 12,
+    "fields": {
+      "performance": 8,
+      "reservation": 3,
+      "row": 3,
+      "seat": 7
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 13,
+    "fields": {
+      "performance": 8,
+      "reservation": 3,
+      "row": 5,
+      "seat": 4
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 14,
+    "fields": {
+      "performance": 8,
+      "reservation": 4,
+      "row": 4,
+      "seat": 4
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 15,
+    "fields": {
+      "performance": 1,
+      "reservation": 4,
+      "row": 2,
+      "seat": 3
+    }
+  },
+  {
+    "model": "theatre.ticket",
+    "pk": 16,
+    "fields": {
+      "performance": 2,
+      "reservation": 4,
+      "row": 5,
+      "seat": 3
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$oZqdjfUqKC500V7kk3kMmb$TBVlOMhfJxWrxbUnNpWZK0+rYM242g7do/YM5tkhn+M=",
+      "last_login": null,
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "User",
+      "email": "admin.user@theatre.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-08-09T09:06:18.876Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$73Z1Y57bcoscZ37s9rE9v0$4SEQ0TtXwJKzO5/CRdFSrTifatiPjkZ38gM2H8Kqsdg=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Regular",
+      "last_name": "User",
+      "email": "regular.user@theatre.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T09:06:18.876Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
